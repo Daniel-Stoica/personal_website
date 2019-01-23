@@ -1,0 +1,175 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Global styles
+----------------------------*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+a {
+  color: #EF233C;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+.uppercase {
+  text-transform: uppercase;
+  color: #2B2D42;
+}
+h2, p {
+  margin: 0;
+}
+.btn {
+  text-decoration: none;
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+.btn:hover {
+  color: aqua;
+}
+
+
+/*Navigation
+----------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #8D99AE;
+}
+nav a:hover {
+  color: turquoise;
+}
+
+/*Header and Footer
+----------------------------*/
+header, footer {
+    background: #2B2D42;
+    color: #8D99AE;
+}
+
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+.download {
+  position: absolute;
+  top: 52px;
+  right: 0;
+}
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 220px;
+}
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+}
+.contact-info a {
+    background-color: #5D99AE;
+    color: darkblue;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+.contact-info a:hover {
+  color: aqua;
+}
+
+/*Work Experience
+----------------------------*/
+.work {
+  /* background: #EDF2F4; */
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  backro
+}
+
+/*Education
+----------------------------*/
+.education {
+  background: #5D99AE;
+}
+.education h3 {
+  margin-top: 40px;
+}
+#last {
+  margin-top: 20px;
+  color: black;
+}
+#last:hover {
+  color: inherit;
+}
+
+/*Media Queries
+----------------------------*/
+@media (min-width: 900px) {
+  .col-left {
+    color: black;
+    width: 30%;
+    float: left;
+    min-height: 220px;
+  }
+  .col-right {
+    color: brown;
+    width: 70%;
+    float: right;
+    min-height: 220px;
+    text-shadow: 100%;
+  }
+}
+
+@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+}
